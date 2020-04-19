@@ -1,9 +1,3 @@
-/*
-*use effect dispara uma função em determinado momento
-*toda vez que é alterado o valor do array de dependência (segundo parametro)
-*ele executa a função (primeiro parametro)  
-*/
-
 import React, { useState, useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { FiPower, FiTrash2 } from 'react-icons/fi'
@@ -47,8 +41,10 @@ export default function Profile() {
     }
   }
 
+  // Function de logout
+  // Efetua o logout ao limpar os dados do local storage
   function handleLogout() {
-    localStorage.clear() // Efetua o logout ao limpar os dados do local storage
+    localStorage.clear() 
 
     history.push('/')
   }

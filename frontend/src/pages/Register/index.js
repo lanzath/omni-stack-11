@@ -5,7 +5,6 @@ import { FiArrowLeft } from 'react-icons/fi' // Login Feather Icon
 import api from '../../services/api'
 import './styles.css' // Css 
 
-// Images
 import logoImg from '../../assets/logo.svg'
 
 export default function Register() {
@@ -19,7 +18,8 @@ export default function Register() {
 
   // função responsável pelo cadastro do usuário no backend
   async function handleRegister(e) {
-    e.preventDefault() // previne comportamento padrão do form de recarregar a página
+    // previne comportamento padrão do form de recarregar a página
+    e.preventDefault() 
 
     const data = {
       name,
@@ -30,11 +30,13 @@ export default function Register() {
     }
 
     try {
-      const res = await api.post('ongs', data) // chama a api e manda os dados para o endpoint data
+      // chama a api e manda os dados para o endpoint data
+      const res = await api.post('ongs', data) 
 
       alert(`Seu ID de acesso: ${res.data.id}`)
 
-      history.push('/') // Manda para rota login após concluir o cadastro
+      // Manda para rota login após concluir o cadastro
+      history.push('/')
     } catch (error) {
       alert('Erro no cadastro, tente novamente.')
     }
@@ -50,7 +52,7 @@ export default function Register() {
           <p>Faça seu cadastro, entre na plataforma e ajude pessoas a encontrarem os casos da sua ONG</p>
 
           <Link className="back-link" to="/">
-            <FiArrowLeft size={16} color="#e02041" />  {/* arrow left icon component */}
+            <FiArrowLeft size={16} color="#e02041" />
             Não tenho cadastro
           </Link>
         </section>

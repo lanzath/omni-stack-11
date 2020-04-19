@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import { FiArrowLeft } from 'react-icons/fi' // Login Feather Icon
+import { FiArrowLeft } from 'react-icons/fi'
 
 import api from '../../services/api'
 
@@ -17,6 +17,7 @@ export default function NewIncident() {
   const [description, setDescription] = useState('')
   const [value, setValue] = useState('')
 
+  // function para criação de novo Caso
   async function handleNewIncident(e) {
     e.preventDefault()
 

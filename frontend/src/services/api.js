@@ -1,3 +1,4 @@
+// Import do Axios para consumo da API
 import axios from 'axios'
 
 const api = axios.create({

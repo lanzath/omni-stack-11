@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import { FiLogIn } from 'react-icons/fi' // Login Feather Icon
+import { FiLogIn } from 'react-icons/fi'
 
 import api from '../../services/api'
 
-import './styles.css' // Css 
+import './styles.css' 
 
-// Images
 import logoImg from '../../assets/logo.svg'
 import heroesImg from '../../assets/heroes.png'
 
@@ -14,6 +13,7 @@ export default function Logon(params) {
   const [id, setId] = useState('')
   const history = useHistory()
 
+  // function para efetuar login
   async function handleLogin(e) {
     e.preventDefault()
 

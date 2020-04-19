@@ -1,8 +1,10 @@
 # Projeto Be The Hero
 ## Projeto fullstack elaborado durante a semana OmniStack 11 da [Rocketseat](https://rocketseat.com.br/)
 
+## Os arquivos estão todos estruturados por pastas conforme as aulas, e os códigos comentados
+
 ### Front-End:
-**O front-end do projeto foi criado com React, o código está comentado e segue algumas anotações que eu fiz durante as aulas**
+**O front-end do projeto foi criado com React, segue algumas anotações que eu fiz durante as aulas**
 
 1. JSX: o React utiliza o formato `jsx` que é um arquivo `html` dentro de um `javascript`;
 2. Componentes: Componentes são funções que retornam um `HTML`;
@@ -17,6 +19,8 @@
 
 ### Back-end:
 **O back-end do projeto foi criado com node.js uma plataforma criada com o google v8 engine para desenvolvimento server-side com `javascript`, os frameworks utilizados foram `express` para utilização de rotas e middlewares, `knex` para conexão e integração com banco de dados e `sqlite3` como banco de dados e `cors`como módulo de segurança para definir quem pode acessar a API**
+
+**Segue minhas anotações** 
 1. MÉTODOS **HTTP**
    1. `GET`:    Buscar uma informação no back-end
    1. `POST`:   Criar uma informação no back-end

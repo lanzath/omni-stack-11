@@ -1,4 +1,4 @@
-// Update with your config settings.
+// Configurações do banco de dados (knex & sqlite3).
 
 module.exports = {
 
